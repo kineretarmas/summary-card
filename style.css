@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+@font-face {
+    font-family: 'HansenGrotesk';
+    src: url('/assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+.container {
+    font-family: 'HansenGrotesk';
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+.card {
+    
+    display: grid;
+    grid-template-columns: 220px 230px;
+    box-shadow: 10px 10px 10px rgba(175, 175, 213, 0.639);
+    border-radius: 15px;
+}
+
+.left-col h1 {
+
+    color: #c2c2db;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.circle {
+    margin: auto;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    text-align: center;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.left-col .circle span {
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+}
+
+.circle p {
+    color: #c2c2db;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.left-col h2 {
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.left-col p {
+    font-size: 14px;
+    color: #c2c2db;
+    margin-top: 10px;
+}
+
+.left-col {
+    text-align: center;
+    background: linear-gradient(to top, #2e2be8, #7857ff);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.card-col {
+    padding: 30px 20px;
+}
+
+.right-col .value {
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 13px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.right-col h1 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.right-col .value svg {
+    margin-right: 15px;
+}
+
+.red {
+    background: rgba(255, 87, 87, 0.123);
+}
+
+.yellow {
+    background-color: rgb(255, 176, 31, 0.123)
+}
+
+.yellow h3 {
+    color: hsl(39, 100%, 56%);
+}
+
+.green {
+    background: rgb(0, 189, 145, 0.123)
+}
+
+.green h3 {
+    color: hsl(166, 100%, 37%);
+}
+
+.blue {
+    background-color: rgb(17, 37, 212, 0.123)
+}
+
+.blue h3{
+    color: hsl(234, 85%, 45%);
+}
+
+.red h3 {
+    color: hsl(0, 100%, 67%);
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+.btn button {
+    background:  hsl(224, 30%, 27%);
+    color: white;
+    border: none;
+    padding: 10px 70px;
+    border-radius: 20px;
+}
+
+@media (max-width: 470px) {
+    .card {
+        display: grid;
+        grid-template-columns: 240px;
+        box-shadow: 10px 10px 10px rgba(175, 175, 213, 0.639);
+        border-radius: 15px;
+    }
+    
+}
+
+.attribution {
+    margin-top: 20px;
+}
